@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1624170-D9B5-4BD5-A511-D8ADE40F2353}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>O8.Mobile.Droid.Vault</RootNamespace>
+    <AssemblyName>O8.Mobile.Droid.Vault</AssemblyName>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>PROD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'UAT|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UAT</OutputPath>
+    <DefineConstants>UAT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Test</OutputPath>
+    <DefineConstants>TEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Training|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Training</OutputPath>
+    <DefineConstants>TRN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Perf|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Perf</OutputPath>
+    <DefineConstants>PERF</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StronglyTypedBundle.cs" />
+    <Compile Include="StringEncryptionUtils.cs" />
+    <Compile Include="UnencryptedException.cs" />
+    <Compile Include="EncryptionConstants.cs" />
+    <Compile Include="ISharedPreferenceVault.cs" />
+    <Compile Include="Keys\Storage\KeyStorageType.cs" />
+    <Compile Include="SharedPreferenceVaultFactory.cs" />
+    <Compile Include="SharedPreferenceVaultRegistry.cs" />
+    <Compile Include="StandardSharedPreferenceVault.cs" />
+    <Compile Include="Keys\Storage\IKeyStorage.cs" />
+    <Compile Include="StandardSharedPreferenceVaultEditor.cs" />
+    <Compile Include="Salt\PrngSaltGenerator.cs" />
+    <Compile Include="Salt\ISaltGenerator.cs" />
+    <Compile Include="Salt\SaltBox.cs" />
+    <Compile Include="Salt\SpecificSaltGenerator.cs" />
+    <Compile Include="Keys\Wrapper\ISecretKeyWrapper.cs" />
+    <Compile Include="Keys\Wrapper\ObfuscatingSecretKeyWrapper.cs" />
+    <Compile Include="Keys\Wrapper\AndroidKeystoreSecretKeyWrapper.cs" />
+    <Compile Include="Keys\Storage\AndroidKeystoreTestState.cs" />
+    <Compile Include="Keys\Storage\BadHardware.cs" />
+    <Compile Include="Keys\Storage\MemoryOnlyKeyStorage.cs" />
+    <Compile Include="Keys\Generator\SecretKeyGenerator.cs" />
+    <Compile Include="Keys\Generator\RandomKeyGenerator.cs" />
+    <Compile Include="Keys\Generator\PbkdfKeyGenerator.cs" />
+    <Compile Include="Keys\Generator\Aes256RandomKeyFactory.cs" />
+    <Compile Include="Keys\Generator\Aes256KeyFromPasswordGenerator.cs" />
+    <Compile Include="Keys\Storage\CompatSharedPrefKeyStorageFactory.cs" />
+    <Compile Include="Keys\Storage\KeychainAuthenticatedKeyStorage.cs" />
+    <Compile Include="Keys\Storage\SharedPrefKeyStorage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NOTICE.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
