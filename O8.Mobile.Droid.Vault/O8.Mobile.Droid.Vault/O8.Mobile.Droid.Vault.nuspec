@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>O8.Mobile.Droid.Vault</id>
+    <version>1.0.0-alpha</version>
+    <title>Android-Vault Xamarin port</title>
+    <authors>Orbital8</authors>
+    <owners>orbital8</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/Orbital8/android-vault-csharp</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Secure storage vault for Android</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Android Xamarin Storage</tags>
+  </metadata>
+</package>
