@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O8.Mobile.Droid.Vault", "O8.Mobile.Droid.Vault\O8.Mobile.Droid.Vault.csproj", "{B1624170-D9B5-4BD5-A511-D8ADE40F2353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O8.Mobile.Droid.Vault.Tests", "O8.Mobile.Droid.Vault.Tests\O8.Mobile.Droid.Vault.Tests.csproj", "{E207DEBD-B5A7-4149-B865-4BA423BB54A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Perf|Any CPU = Perf|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+		Training|Any CPU = Training|Any CPU
+		UAT|Any CPU = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Perf|Any CPU.ActiveCfg = Perf|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Perf|Any CPU.Build.0 = Perf|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Test|Any CPU.Build.0 = Test|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Training|Any CPU.ActiveCfg = Training|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.Training|Any CPU.Build.0 = Training|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{B1624170-D9B5-4BD5-A511-D8ADE40F2353}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Perf|Any CPU.ActiveCfg = Perf|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Perf|Any CPU.Build.0 = Perf|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Perf|Any CPU.Deploy.0 = Perf|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Test|Any CPU.Build.0 = Test|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Test|Any CPU.Deploy.0 = Test|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Training|Any CPU.ActiveCfg = Training|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Training|Any CPU.Build.0 = Training|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.Training|Any CPU.Deploy.0 = Training|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{E207DEBD-B5A7-4149-B865-4BA423BB54A0}.UAT|Any CPU.Deploy.0 = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
